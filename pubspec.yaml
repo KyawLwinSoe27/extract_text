@@ -2,7 +2,7 @@ name: extract_text
 description: "A simple text extractor that supports PDF, DOCX, TXT, and image OCR."
 version: 0.0.1
 
-homepage: https://github.com/yourusername/extract_text
+homepage: https://github.com/KyawLwinSoe27/extract_text
 
 environment:
   sdk: ^3.9.2

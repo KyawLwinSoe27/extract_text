@@ -1,7 +1,7 @@
 name: extract_text
 description: "A simple text extractor that supports PDF, DOCX, TXT, and image OCR."
 version: 0.0.1
-author: Kyaw Lwin Soe <kyawlwinsoe815@gmail.com>
+
 homepage: https://github.com/yourusername/extract_text
 
 environment:

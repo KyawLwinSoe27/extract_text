@@ -1,5 +1,3 @@
-// lib/src/file_type_helper.dart
-
 enum FileType {
   pdf,
   docx,

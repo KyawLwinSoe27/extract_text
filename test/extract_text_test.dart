@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:extract_text/extract_text.dart';
 
@@ -20,7 +21,9 @@ void main() {
         final text = await ExtractText.fromFile(filePath);
         expect(text.isNotEmpty, true);
       } else {
-        print('⚠️ Skipped .docx test (file not found)');
+        if (kDebugMode) {
+          print('Skipped .docx test (file not found)');
+        }
       }
     });
 

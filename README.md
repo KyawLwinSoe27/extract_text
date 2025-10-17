@@ -54,6 +54,9 @@ your_app/
         tessdata_config.json
     lib/
 
+- Place all `.traineddata` files inside `assets/tessdata/`.
+- Place `tessdata_config.json` directly inside `assets/`.
+
 3. Declare assets in pubspec.yaml
 ```yaml
    flutter:

@@ -44,13 +44,13 @@ You need the trained data files and a configuration file for Tesseract OCR.
 
 Create an assets folder in your project, for example:
 
-your_app/
+your_flutter_app/
 ├─ assets/
-│   └─ tessdata/
-│   |    ├─ eng.traineddata
-│   |    ├─ mya.traineddata
-│   |    ├─ tha.traineddata
-│   └─ tessdata_config.json
+│ ├─ tessdata/
+│ │ ├─ eng.traineddata
+│ │ ├─ mya.traineddata
+│ │ └─ tha.traineddata
+│ └─ tessdata_config.json
 └─ lib/
 
 3. Declare assets in pubspec.yaml

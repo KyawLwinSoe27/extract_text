@@ -45,6 +45,7 @@ You need the trained data files and a configuration file for Tesseract OCR.
 Create an `assets` folder in your project, for example:
 
 your_app/
+
     assets/
         tessdata/
             eng.traineddata

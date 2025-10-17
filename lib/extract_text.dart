@@ -17,7 +17,7 @@ class ExtractText {
       case FileType.txt:
         return await TxtExtractor.extract(path);
       case FileType.image:
-        return await OcrExtractor.extract(path);
+        return await OcrExtractor.extractTextAutoLanguage(path);
       case FileType.unsupported:
       throw UnsupportedError('File type not supported: $path');
     }

@@ -35,10 +35,10 @@ flutter pub get
 
 You need the trained data files and a configuration file for Tesseract OCR.
 
-* English (eng.traineddata)
-* Myanmar (mya.traineddata)
-* Thai (tha.traineddata)
-* Tessdata Config (tessdata_config.json)
+* [English (eng.traineddata)](https://github.com/KyawLwinSoe27/extract_text/blob/main/Resources/eng.traineddata)
+* [Myanmar (mya.traineddata)](https://github.com/KyawLwinSoe27/extract_text/blob/main/Resources/mya.traineddata)
+* [Thai (tha.traineddata)](https://github.com/KyawLwinSoe27/extract_text/blob/main/Resources/tha.traineddata)
+* [Tessdata Config (tessdata_config.json)](https://github.com/KyawLwinSoe27/extract_text/blob/main/Resources/tessdata_config.json)
 
 2. Add files to your Flutter project
 

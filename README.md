@@ -132,9 +132,17 @@ class MyApp extends StatelessWidget {
 
 # Changelog
 
-## 0.0.1
+## [0.0.1]
 - Initial release
 - PDF, DOCX, TXT, and image (OCR) extraction
+
+## [0.0.2] - 2025-10-17
+### Added
+- Integrated **tesseract_ocr** package to support OCR for image files.
+- Added support for **Thai (`tha`)** and **Myanmar (`mya`)** language files.
+- Updated package to load language files and configuration from assets.
+- Internal improvements to `ExtractText` and `TessdataLoader` for multi-language support.
+
 
 ## Notes
 

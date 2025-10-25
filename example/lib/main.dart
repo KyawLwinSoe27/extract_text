@@ -78,10 +78,7 @@ class _ExtractTextHomePageState extends State<ExtractTextHomePage> {
                   'Selected File:',
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
-                Text(
-                  filePath!,
-                  style: const TextStyle(color: Colors.blueGrey),
-                ),
+                Text(filePath!, style: const TextStyle(color: Colors.blueGrey)),
                 const SizedBox(height: 20),
               ],
               Expanded(

@@ -40,6 +40,11 @@ You need the trained data files and a configuration file for Tesseract OCR.
 * [Thai (tha.traineddata)](https://github.com/KyawLwinSoe27/extract_text/blob/main/Resources/tha.traineddata)
 * [Tessdata Config (tessdata_config.json)](https://github.com/KyawLwinSoe27/extract_text/blob/main/Resources/tessdata_config.json)
 
+From Original Resources
+* [English (eng.traineddata)](https://github.com/tesseract-ocr/tessdata/blob/4.0.0/eng.traineddata)
+* [Myanmar (mya.traineddata)](https://github.com/tesseract-ocr/tessdata/blob/4.0.0/mya.traineddata)
+* [Thai (tha.traineddata)](https://github.com/tesseract-ocr/tessdata/blob/4.0.0/tha.traineddata)
+
 2. Add files to your Flutter project
 
 Create an `assets` folder in your project, for example:
@@ -143,7 +148,15 @@ class MyApp extends StatelessWidget {
 - Updated package to load language files and configuration from assets.
 - Internal improvements to `ExtractText` and `TessdataLoader` for multi-language support.
 
-
+## Removed
+- Refactored the OCR system to **remove Google ML Kit** and simplify processing.
+- Unified all OCR operations into one method:
+  ```dart
+  final text = await TesseractOCTExtractor.performOcr(
+    imagePath: file.path,
+    languages: ['mya', 'eng', 'tha'],
+  );
+  
 ## Notes
 
 For OCR and PDF extraction, Android and iOS platforms are required.

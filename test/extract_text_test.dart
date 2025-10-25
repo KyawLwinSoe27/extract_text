@@ -31,8 +31,10 @@ void main() {
       final file = File('test/unsupported.xyz');
       await file.writeAsString('???');
 
-      expect(() async => await ExtractText.fromFile(file.path),
-          throwsA(isA<UnsupportedError>()));
+      expect(
+        () async => await ExtractText.fromFile(file.path),
+        throwsA(isA<UnsupportedError>()),
+      );
     });
   });
 }

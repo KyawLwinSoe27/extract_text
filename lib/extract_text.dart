@@ -1,4 +1,4 @@
-import 'package:extract_text/src/ocr_extractor.dart';
+import 'package:extract_text/src/tesseract_ocr_extractor.dart';
 
 import 'src/file_type_helper.dart';
 import 'src/pdf_extractor.dart';
@@ -17,9 +17,9 @@ class ExtractText {
       case FileType.txt:
         return await TxtExtractor.extract(path);
       case FileType.image:
-        return await OcrExtractor.extractTextAutoLanguage(path);
+        return await TesseractOCTExtractor.performOcr(path);
       case FileType.unsupported:
-      throw UnsupportedError('File type not supported: $path');
+        throw UnsupportedError('File type not supported: $path');
     }
   }
 }

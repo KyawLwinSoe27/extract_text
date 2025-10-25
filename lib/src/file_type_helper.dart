@@ -1,10 +1,4 @@
-enum FileType {
-  pdf,
-  docx,
-  txt,
-  image,
-  unsupported,
-}
+enum FileType { pdf, docx, txt, image, unsupported }
 
 class FileTypeHelper {
   static FileType getFileType(String path) {

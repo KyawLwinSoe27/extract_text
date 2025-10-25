@@ -1,6 +1,6 @@
 name: extract_text
 description: "A simple text extractor that supports PDF, DOCX, TXT, and image OCR."
-version: 0.0.1
+version: 0.0.2
 
 homepage: https://github.com/KyawLwinSoe27/extract_text
 
@@ -10,8 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_mlkit_text_recognition: ^0.15.0
-  google_mlkit_language_id: ^0.13.0
   read_pdf_text: ^0.3.1
   path: ^1.9.1
   xml: ^6.6.1
